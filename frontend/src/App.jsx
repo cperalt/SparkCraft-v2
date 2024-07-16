@@ -3,11 +3,13 @@ import './App.css'
 import Product from "./pages/Product";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
+import Nav from './components/Nav'
 
 
 function App() {
   return (
     <BrowserRouter>
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="products" element={<Product />} />
