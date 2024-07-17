@@ -56,12 +56,12 @@ video {
     }
 }
 
-#main-section {
+.mainSection {
     display: flex;
     justify-content: center;
 }
 
-.first-section {
+.firstSection {
     /* background-color: #f3f3f2; */
     background-color: #121626;
     /* background-color: #17141d ; */
@@ -82,7 +82,7 @@ video {
 
 }
 
-.first-section-para {
+.firstSectionPara {
     margin-top: 3.5rem;
     margin-left: 1rem;
 
@@ -94,11 +94,11 @@ video {
     }
 }
 
-.section-statement_word {
+.sectionStatementWord {
     color: #A4C8FF;
 }
 
-.section-statement {
+.sectionStatement {
     font-size: 1.6rem;
     font-family: TTFirs;
     color: #ffffff;
@@ -109,7 +109,7 @@ video {
     }
 }
 
-.home-cards {
+.homeCards {
     display: flex;
     grid-gap: 3rem;
     flex-direction: column;
