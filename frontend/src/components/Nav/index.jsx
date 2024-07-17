@@ -13,7 +13,7 @@ function Nav() {
                     <li><NavLink className={navStyles.navbar_links_link} to="/products">Technology</NavLink></li>
                     <li><NavLink className={navStyles.navbar_links_link} to="/contact">Contact</NavLink></li>
                 </ul>
-                <i className="fa-solid fa-bars" id="navbar--hamburger"></i>
+                <i className={`${navStyles.navbarHamburger} fa-solid fa-bars`}></i>
             </nav>
         </header> 
     )
