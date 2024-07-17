@@ -1,9 +1,11 @@
 import { BrowserRouter, Routes , Route } from "react-router-dom";
-import './App.css'
+import './index.css'
 import Product from "./pages/Product";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Nav from './components/Nav'
+import NotFound from "./pages/NotFound";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -14,7 +16,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="products" element={<Product />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
