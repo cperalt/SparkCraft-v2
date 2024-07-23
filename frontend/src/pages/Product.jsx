@@ -1,6 +1,5 @@
 function Product() {
     
-    console.log("hello")
     return (
         <div>
             Products Page
