@@ -41,7 +41,7 @@ function Card({robots}) {
             {robots.map(robot => (
                 <div href="" className="card_hover">
                     <div className="card">
-                        <img src={`../../public/product_imgs/${robot.name}Face.jpg`} alt={`Picture of ${robot.name}`}  className="card_img"/>
+                        <img src={`/product_imgs/${robot.name}Face.jpg`} alt={`Picture of ${robot.name}`}  className="card_img"/>
                         <section className="card-section">
                             <h3 className={`title title-${robot.color}`}>{robot.company}</h3>
                             <p className={`description ${robot.color}`}>{robot.name}</p>

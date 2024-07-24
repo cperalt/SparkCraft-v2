@@ -29,7 +29,7 @@ function Card({name, color}) {
   return (
         <a className="card_hover">
             <div className="card">
-                <img src={`/public/product_imgs/${name}Full.jpg`} alt={`Picture of ${name} robot`} className="card_img" />
+                <img src={`/product_imgs/${name}Full.jpg`} alt={`Picture of ${name} robot`} className="card_img" />
                 <section className="home-card-section">
                     <p className={`description ${color}`}>{name}</p>
                 </section>
