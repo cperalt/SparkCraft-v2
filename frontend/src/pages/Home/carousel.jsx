@@ -1,43 +1,43 @@
+import "../../pages/product.css"
+
 function Carousel() {
     return (
-<div className="carousel carousel-center bg-neutral rounded-box w-full space-x-4 p-4">
-  <div className="carousel-item">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg"
-      className="rounded-box" />
+<div className="carousel rounded-box">
+  <div className="carousel-item m-4">
+        <Card name="Optimus" color="white" />
   </div>
-  <div className="carousel-item">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg"
-      className="rounded-box" />
+  <div className="carousel-item m-4">
+        <Card name="Figure-01" color="black" />
   </div>
-  <div className="carousel-item">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
-      className="rounded-box" />
+  <div className="carousel-item m-4">
+        <Card name="Phoenix" color="white" />
   </div>
-  <div className="carousel-item">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg"
-      className="rounded-box" />
+  <div className="carousel-item m-4">
+        <Card name="Apollo" color="black" />
   </div>
-  <div className="carousel-item">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg"
-      className="rounded-box" />
+  <div className="carousel-item m-4">
+        <Card name="GR-01" color="white" />
   </div>
-  <div className="carousel-item">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg"
-      className="rounded-box" />
-  </div>
-  <div className="carousel-item">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
-      className="rounded-box" />
+  <div className="carousel-item m-4">
+        <Card name="Atlas" color="black" />
   </div>
 </div>
     )
 }
+
+function Card({name, color}) {
+  return (
+        <a className="card_hover">
+            <div className="card">
+                <img src={`../../../public/product_imgs/${name}Full.jpg`} alt={`Picture of ${name} robot`} className="card_img" />
+                <section className="home-card-section">
+                    <p className={`description ${color}`}>{name}</p>
+                </section>
+            </div>
+        </a>
+  )
+}
+
+
 
 export default Carousel

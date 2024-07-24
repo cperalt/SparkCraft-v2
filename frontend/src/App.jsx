@@ -14,16 +14,15 @@ import { supabase } from "./Supabase";
 function App() {
       const [countries, setCountries] = useState([]);
     
-    useEffect(() => {
-      getCountries();
-    }, []);
-    
-    async function getCountries() {
-      let { data: Robot, error } = await supabase
-        .from('Robot')
-        .select('*')
-          console.log("Robot" , Robot)
-    }
+    // useEffect(() => {
+    //   getCountries();
+    // }, []);
+    // 
+    // async function getCountries() {
+    //   let { data: Robot, error } = await supabase
+    //     .from('Robot')
+    //     .select('*')
+    // }
   
   return (
     <BrowserRouter>
