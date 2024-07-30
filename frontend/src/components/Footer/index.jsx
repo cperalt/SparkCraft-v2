@@ -3,7 +3,7 @@ import hal from "../../assets/android.png";
 
 function Footer() {
     return (
-        <footer className={styles.footer}>
+        <footer className={`${styles.footer} bg-white`}>
             <section className={styles.footerContact}>
                 <h2 className="text-red-500">Lets talk</h2>
                 <h3>hi@sparkcraft.net</h3>

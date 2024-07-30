@@ -2,7 +2,7 @@ import "../../pages/product.css"
 
 function Carousel() {
     return (
-<div className="carousel rounded-box">
+<div className="carousel rounded-box flex">
   <div className="carousel-item m-4">
         <Card name="Optimus" color="white" />
   </div>
